@@ -1,0 +1,199 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9ecef;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 60px auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.container:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 20px 0 10px;
+    font-weight: 600;
+    color: #555;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #66afe9;
+    outline: none;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.5);
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+button:active {
+    background-color: #1e7e34;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Additional Styles for Better UX */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input, select {
+    box-sizing: border-box;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Result Page Styles */
+.result-container {
+    max-width: 600px;
+    margin: 60px auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.result-container h1 {
+    font-size: 2.2em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.result-container h2 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.result-container p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.result-container p strong {
+    color: #333;
+    font-weight: 600;
+}
+
+.result-container .go-back-link {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.result-container .go-back-link:hover {
+    background-color: #0056b3;
+}
+
+/* Enhanced Model Performance Scores Section */
+.scores-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.scores-container h2 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.scores-container .score-item {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color: #555;
+}
+
+.scores-container .score-item strong {
+    color: #333;
+}
+
+.scores-container .score-value {
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: 600;
+    color: #007bff;
+}
+
+.scores-container p {
+    margin: 0;
+}

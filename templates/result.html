@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="result-container">
+        <h1>Prediction Result</h1>
+
+        <p><strong>Diagnostic Prediction:</strong> {{ diagnostic_prediction }}</p>
+        <p><strong>Proactive Action:</strong> {{ proactive_action }}</p>
+
+        <div class="scores-container">
+            <h2>Model Performance Scores</h2>
+        
+            <div class="score-item">
+                <p><strong>Diagnostic Model Scores:</strong></p>
+                <p class="score-value">Recall: {{ recall_diagnostic }}% </p><br>
+                <p class="score-value">Accuracy: {{ accuracy_diagnostic }}%</p>
+            </div>
+            <div class="score-item">
+                <p><strong>Predictive Model Scores:</strong></p>
+                <p class="score-value">Precision: {{ precision_predictive }}%</p><br>
+                <p class="score-value"> F1 Score: {{ f1_predictive }}%</p>
+            </div>
+        </div>
+
+        <a href="/" class="go-back-link">Go Back</a>
+    </div>
+</body>
+</html>
